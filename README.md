@@ -1,19 +1,68 @@
-Our Awesome! Not So Micro Project
+APARTMENT MAINTENANCE CHARGE MANAGEMENT APP
 
-We are building a restaurant rating app that tells you the best place to get your favourite foods!
-This project aims to perform the following:
+We are building an Apartment Maintenance charge Management App that manages maintenance charge collection at any apartment building. The primary objectives are:
 
-1. Build an app to get rating for foods at restaurants based on flavour, hygeine, ambience, price and location .
-2. Suggest the best place based on the above criteria.
-3. Give links of Swiggy, Zomato etc to order food from your restaurant.
-4. Give route to the restaurant.
-5. Give complimentary food coupons for using the app.
+1. Registration of apartments
+2. Registration of tenants/owners
+3. Payment of maintenance charges via online portal or cash
+4. Automatic bill/receipt generation
+5. Mobile notification when payment made successfully or otherwise.
 
-Arya says:
-I just talked to my father about this who happens to be very enthusiastic about this (possibly more that any of us!). A brief summary of what we discussed (or atleast what I understood) is right below.
+Functionalities:
 
-First we need to think about getting rating for hotels and their foods. For that, we need to get details of restaurants in the locality we choose, ie, make a database for storing the restaurant name, location, contact details etc (btw we need to name our product too!).For this i think there would be a google API available (maybe not for free), users entering the restaurant name for us would mean there'll be a lot of mistakes (so let google take care of that). Now the users should 'feel' like rating the food with our app, and they would do so if they get any incentives (for example, if they rate a restaurant and eventually the restaurant gets high rating, they get a free masala dosa!). 
+Admin can:
+- Register apartments
+- Register tenants/owners
+- Manage user profile.
+- Mail goes to admin when user changes profile data.
+- Decide if mail should go to a person or not.
+- Add or remove members.
+Admin can do all that a cashier and user can do
 
-For the frontend for user, the app should have a search bar where they could search food/restaurant. If they search for say, paneer butter masala, the search result would list the restaurants best rated for paneer butter masala. And if they search for a particular restaurant, the search result would give the foods that hotel is best rated for! We could also let the user add a new food item into the list, but what if they spell the food item wrong! Or write Chole instead of Channa?! A practical solution is to let the restaurant add its item into the list (that way we wouldn't have to bother about classifying different cuisines and courses!). So what the rating could possibly look like is: Restaurant name on top, its contact and stuff after, then all its items listed, user could tick the food they just had, a tiny bar with stars appear right next to the food (only if the food has been ticked), and user rates it! The rating goes to the database (well thats what i think, how do you give it the actual rating based on all those ratings?! I hope there is an API for that too!).
+Cashier can do:
+Cashier can do all that a user can do and also recieve payment.
+
+For th user:
+
+In the signup page
+- Enter name
+- Email id
+- Mobile number
+- Set password
+- Single sign on provision 
+(This is a common thing so just copy paste)
+
+In the login page
+- Enter name 
+- Enter password
+- Login button
+
+We need to think about what comes in the very first page after login.
+
+First page:
+- Office bearers name, flat no, contact
 
 
+
+
+
+In the Profile Page:
+- Profile pic
+- Click on profile pic to upload pic
+- Name
+- Email address with + symbol to add or remove
+- Mob no with a + symbol
+- Names of other members of the house
+- Mob nos of those members.
+- Change password
+- Save button 
+
+In the 'pay maintenance charge' box:
+- Date and time
+- Name,Flat no.
+- Monthly charge
+- Last paid month
+- Previous dues
+- Drop down with default cash, others being Netbanking, credit/debit etc.
+- Payment details: Table with columns being slno, Date, Cheque details or NA, Amt, delete button. This way you can pay the dues for the months you select and also pay in advance for the coming months.
+- Save button to stop and resume.
