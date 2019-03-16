@@ -22,7 +22,7 @@ Admin can do all that a cashier and user can do
 Cashier can do:
 Cashier can do all that a user can do and also recieve payment.
 
-For th user:
+For the user:
 
 In the signup page
 - Enter name
