@@ -1,6 +1,6 @@
 APARTMENT MAINTENANCE CHARGE MANAGEMENT APP
 
-We are building an Apartment Maintenance charge Management App that manages maintenance charge collection at any apartment building. The primary objectives are:
+We are building an Apartment Maintenance charge Management App that manages maintenance charge collection at any apartment building. This is a progressive web app, ie, a web app mad to look like a native application. The primary objectives are:
 
 1. Registration of apartments
 2. Registration of tenants/owners
@@ -66,3 +66,4 @@ In the 'pay maintenance charge' box:
 - Drop down with default cash, others being Netbanking, credit/debit etc.
 - Payment details: Table with columns being slno, Date, Cheque details or NA, Amt, delete button. This way you can pay the dues for the months you select and also pay in advance for the coming months.
 - Save button to stop and resume.
+- Bank statement reconciliation.
