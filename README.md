@@ -1,6 +1,6 @@
 ## __APARTMENT MAINTENANCE CHARGE MANAGEMENT APP__
 
-We are building an Apartment Maintenance charge Management App that manages maintenance charge collection at any apartment building. This is a progressive web app, ie, a web app mad to look like a native application. The primary objectives are:
+We are building an Apartment Maintenance charge Management App that manages maintenance charge collection at any apartment building. This is a progressive web app, ie, a web app made to look like a native application. The primary objectives are:
 
 1. Registration of apartments
 2. Registration of tenants/owners
