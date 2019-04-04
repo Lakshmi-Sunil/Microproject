@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>Login Page</title>
+    
+    <!-- Loading Bootstrap -->
+    <link href="includes/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Loading Template CSS -->
+    <link href="includes/css/login.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="includes/css/fonts.css" rel="stylesheet">
+    
+    <!-- Font Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <!--headerIncludes-->
+	
+	<script src="includes/js/jquery-3.3.1.min.js"></script>
+    <script src="includes/js/bootstrap.min.js"></script>
+	<script src="includes/js/common.js"></script>
+</head>
+<body>
+
+    <!--begin header -->
+    <div class="header" >
+		
+    </div>
+    <!--end header -->
+	
+	
+
+	<!--begin section-white-->
+	<div class="section-white"> 
+	  
+	  <!--begin container-->
+	  <div class="container">
+			
+			<!--begin row-->
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4">
+					<div class="form_div" >
+						<form action="" method="post" id="frm_login_form" >
+							<div class="logo" ><img src="includes/images/logome.jpg" /></div>
+							<h4 class="frm_title" >Login Form</h4>
+						  	
+							
+						  <div class="form-group">
+							<label for="usn" >Username</label>
+							<input type="text" class="form-control" id="frm_usn" name="frm_usn" />
+							<div class="frm_err" >Please enter an Email-Id</div>
+						  </div>
+						  
+						  <div class="form-group">
+							<label for="pwd">Password</label>
+							<input type="password" class="form-control" id="frm_password" name="frm_password" />
+							<div class="frm_err" >Please enter a Password</div>
+						  </div>
+						  <button type="submit" class="btn btn-primary" name="frm_submit" id="frm_submit" >Login</button>
+						  <div class="clearfix"></div>
+						  <h6 class="frm_title" align="middle">OR</h6>
+						  <img src="includes/images/google sign in.jpg" style="width:175px;height:50px;" hspace="70" />
+						  <p></p>
+						  <p class="frm_title" align="middle">Dont have an account?Sign up</p>
+						</form>	
+					</div>
+				</div>
+				<div class="col-md-4"></div>               
+			</div>
+			<!--end row-->
+			
+	  </div>
+	  <!--end container-->
+			
+  </div>
+  <!--end section-white-->
+
+<script type="text/javascript" >
+$(document).ready(function(){
+	
+	// Forgot Password Form	
+	$('#frm_fp_cancel').click(function(){
+		$('#frm_login_form').show();
+		$('#frm_forgot_psw_form').hide();
+	});
+	
+	$('#frm_fp_send').click(function(){
+		var err = false;
+		var frm_email = $('#frm_fp_email').val();
+		$('.frm_err').hide();
+		
+		if(frm_email=='')
+		{
+			err = true;
+			$('#frm_fp_email').next('.frm_err').show().html('Please enter an Email-Id');
+			$('#frm_fp_email').focus();
+		}
+		else
+		{
+			var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			if (reg.test(frm_email) == false) 
+			{
+				err = true;
+				$('#frm_fp_email').next('.frm_err').show().html('Please enter a valid Email-id');
+				$('#frm_fp_email').focus();
+			}
+		}
+		
+		if(err==true)
+			return false;
+		else
+		{
+			$('#frm_fp_send').text('Please wait...');
+			return true;
+		}
+	});
+	
+	// Login Form
+	$('#frm_usn').focus();
+	$('#frm_submit').click(function(){
+		var err = false;
+		var frm_usn = $('#frm_usn').val();
+		var frm_password = $('#frm_password').val();
+		$('.frm_err').hide();
+		
+		if(frm_password=='')
+		{
+			err = true;
+			$('#frm_password').next('.frm_err').show();
+			$('#frm_password').focus();
+		}
+		
+		if(frm_usn=='')
+		{
+			err = true;
+			$('#frm_usn').next('.frm_err').show().html('Please enter an Email-Id');
+			$('#frm_usn').focus();
+		}
+		
+		if(err==true)
+			return false;
+		else
+		{
+			$('#frm_submit').text('Please wait...');
+			return true;
+		}
+	});
+	
+	$('#frm_forgot_psw').click(function(){
+		$('#frm_login_form').hide();
+		$('#frm_forgot_psw_form').show();
+	});
+});
+</script>
+
+    <!--begin footer -->
+    <div class="footer">
+		<div class="copy" >
+
+			<p>Copyright &copy; 2019 Company Name.</p>
+		</div>
+    </div>
+    <!--end footer -->    
+    
+</body></html>
