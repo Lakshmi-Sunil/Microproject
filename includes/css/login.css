@@ -1,0 +1,23 @@
+html, body { margin:0; padding:0; font-size:12px; }
+input:focus{ outline: none !important; box-shadow:0 0 !important; }
+
+.form_div { margin:20% 0; background-color:#FFF; padding:30px; border:0px solid #EEE; border-radius:5px; box-shadow: 0px 0px 43px #6f6f6f5c; }
+.form_div .btn { text-transform: uppercase; width:100% !important; margin-bottom:15px; background-color:#000; }
+h1.frm_title { font-size:22px; font-weight:bold; text-align:center; margin-bottom:10px; }
+h4.frm_title { font-size:18px; text-align:center; line-height:22px; margin-bottom:40px; }
+h4.frm_ftr_title { border-top:1px solid #EEE; padding-top:10px; line-height:22px; font-size:12px; text-align:center; }
+.frm_err { width:100%; text-align:center; color:red; font-style:italic; font-size:12px; display:none; }
+
+.form-group { margin-bottom:20px; }
+.form-group label { width:100%; text-align:center; text-transform: uppercase; font-size:12px; font-weight:600; margin-bottom:5px; }
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group textarea{text-align:center;display: block; width: 100%;height: 34px;padding:15px 0;font-family: ubuntu;font-size: 17px;line-height: 1.42857143;color: #060606;background-color: #fff;background-image: none;border: 1px solid #ccc;border-radius: 4px;-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);box-shadow: inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;}
+.form-group input[readonly],
+.form-group textarea[readonly] { color:#CCC; border: 1px solid #EEE; }
+
+.logo { width:100px; margin:0 auto; }
+.logo img { width:100%; }
+
+.footer { background-color:#FFF; width:100%; position:absolute; bottom:0px; text-align:center; border-top:1px solid #CCC; padding:10px 0 0 0; }

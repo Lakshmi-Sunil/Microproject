@@ -1,0 +1,245 @@
+<!-- START HEADER -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>Payment Review</title>
+    
+    <!-- Loading Bootstrap -->
+    <link href="includes/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Loading Template CSS -->
+    <link href="includes/css/main.css" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link href="includes/css/fonts.css" rel="stylesheet" />
+    
+    <!-- Font Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+	
+	<link href="includes/css/jquery-ui.css" rel="stylesheet" />
+	<link href="includes/plugins/fontawesome/css/all.css" rel="stylesheet" />
+	<link href="includes/plugins/daterangepicker/style.css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="includes/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="includes/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="includes/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="includes/plugins/daterangepicker/moment.min.js"></script>	
+	<script type="text/javascript" src="includes/plugins/daterangepicker/script.js"></script>	
+	
+	<script type="text/javascript" src="includes/js/common.js"></script>
+</head>
+<body>
+
+	<div class="main_content" >
+		<script src="includes/js/nav.js"></script>
+		<div class="main_right" >
+			<div class="hdr_top" >				
+				<div class="emp_pho" ><img src="includes/images/me.jpg" /></div>
+				<div class="emp_name" >Hi,<br />Name</div>
+				<div class="act_btn" >
+					<a class="btn btn-danger" id="hdr-menu-btn" href="#" title="Menu" ><i class="fas fa-list"></i></a>
+					<a class="btn btn-danger" id="hdr-logout-btn" href="login.html" title="Logout" ><i class="fas fa-sign-out-alt"></i><span>&nbsp;Logout</span></a>
+				</div>
+				<div class="clearfix" ></div>
+			</div>
+		</div>		
+		<!-- END HEADER -->
+		
+		<!-- START CONTENT -->
+		<div class="main_mid" >		
+		
+			<div class="page">
+				<div class="page_top">
+					<h1>Payment Review</h1>
+					<div class="btns" >
+						<a href="add resident.html" >Add</a>
+					</div>
+					<div class="clearfix" ></div>
+				</div>
+
+				<div class="page_cont">
+				<div class="InputFrm" >
+					<form action="" method="post" >						
+					<div class="page_cont_fltr">						
+						<div class="page_cont_fltr_bx">						
+							<input type="text" id="fltr_keywords" placeholder="Search" />
+						</div>
+						<div class="clearfix" ></div>
+					</div>
+					<div class="clearfix" ></div>
+					<div class="page_cont_data" >
+						<div class="page_cont_tblsm" >
+							<table>
+								<thead>
+									<tr>
+										
+										<th width="20" >Date</th>
+										<th width="50" >Flat No.</th>
+										<th width="150" >Name</th>										
+										<th width="100" >Amount</th>
+										<th width="50" >Cash/Bank</th>
+										<th width="100" class="text-center" >Month</th>
+										<th width="100" class="text-center" >Year</th>
+										<th width="10" class="text-center" ></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td>21/03/2019</td>
+										<td>A2</td>
+										<td>Name 1</td>
+										<td class="text-center" >2500</td>
+										<td class="text-center" >bank</td>
+										<td class="text-center" >March</td>
+										<td class="text-center" >2019</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<input type="checkbox" name="paid" value="paid">
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+					
+										<td>21/03/2019</td>
+										<td>A2</td>
+										<td>Name 1</td>
+										<td class="text-center" >2500</td>
+									    <td class="text-center" >bank</td>
+										<td class="text-center" >April</td>
+										<td class="text-center" >2019</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<input type="checkbox" name="paid" value="paid">
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										
+										<td>21/03/2019</td>
+										<td>A3</td>
+										<td>Name 2</td>                             
+										<td class="text-center" >1200</td>
+										<td class="text-center" >cash</td>
+										<td class="text-center" >March</td>
+										<td class="text-center" >2019</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<input type="checkbox" name="paid" value="paid">
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										
+										<td>21/03/2019</td>
+										<td>A3</td>
+										<td>Name 2</td>
+										<td class="text-center" >1200</td>										
+										<td class="text-center" >cash</td>
+										<td class="text-center" >April</td>
+										<td class="text-center" >2019</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<input type="checkbox" name="paid" value="paid">
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										
+										<td>21/03/2019</td>
+										<td>A3</td>
+										<td>Name 2</td>									
+										<td class="text-center" >1200</td>
+										<td class="text-center" >cash</td>
+										<td class="text-center" >May</td>
+										<td class="text-center" >2019</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<input type="checkbox" name="paid" value="paid">
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										
+										<td>22/03/2019</td>
+										<td>B1</td>
+										<td>Name 3</td>
+										<td class="text-center" >2500</td>									
+										<td class="text-center" >bank</td>
+										<td class="text-center" >February</td>
+										<td class="text-center" >2019</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<input type="checkbox" name="paid" value="paid">
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										
+										<td>22/03/2019</td>
+										<td>C1</td>
+										<td>Name 4</td>									
+										<td class="text-center" >3000</td>
+										<td class="text-center" >bank</td>
+										<td class="text-center" >March</td>
+										<td class="text-center" >2019</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<input type="checkbox" name="paid" value="paid">
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									
+								</tbody>
+								
+							</table>
+							<button type="submit" class="btn btn-save" name="frm_save" >Save</button>
+							<div class="clearfix"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript" >
+			$(document).ready(function(){
+				
+				// Delete
+				$(document).on('click','.del_list_btn',function(){
+					
+					if(confirm('Are you sure, you want to delete this record?'))
+					{
+						// Delete Function
+					}			
+				});
+			});
+			</script>
+
+		</div>
+		<!-- END CONTENT -->
+		
+	<!-- START FOOTER -->
+	<div class="clearfix" ></div>
+</div>
+<div class="clearfix" ></div>
+<div class="main_footer">
+	<div class="copy" >
+		<p>Copyright &copy; 2019 AMCM</p>
+	</div>
+</div>
+</body>
+</html>
+<!-- END FOOTER -->

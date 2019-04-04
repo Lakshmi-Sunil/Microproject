@@ -1,0 +1,241 @@
+<!-- START HEADER -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>Edit Resident</title>
+    
+    <!-- Loading Bootstrap -->
+    <link href="includes/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Loading Template CSS -->
+    <link href="includes/css/main.css" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link href="includes/css/fonts.css" rel="stylesheet" />
+    
+    <!-- Font Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+	
+	<link href="includes/css/jquery-ui.css" rel="stylesheet" />
+	<link href="includes/plugins/fontawesome/css/all.css" rel="stylesheet" />
+	<link href="includes/plugins/daterangepicker/style.css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="includes/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="includes/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="includes/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="includes/plugins/daterangepicker/moment.min.js"></script>	
+	<script type="text/javascript" src="includes/plugins/daterangepicker/script.js"></script>	
+	
+	<script type="text/javascript" src="includes/js/common.js"></script>
+</head>
+<body>
+	
+	<div class="main_content" >
+		<div class="main_left" >
+			<a href="#" class="logo" ><img src="includes/images/logome.jpg" /></a>
+			<div class="main_menu" >
+				<ul>
+					<li>
+						<div><i class="fas fa-book"></i>Section 1</div>
+						<ul>
+							<li><a href="login - Copy.html" >Sign in</a></li>
+							<li><a href="residents list.html" >Residents list</a></li>
+							<li><a href="tickpaid.html" >Payment</a></li>
+							<li><a href="whoallpaid.html" >View payment history</a></li>
+							<li><a href="building details.html" >Building details</a></li>
+							<li><a href="page-Copy.html" >Roles and responsibilities</a></li>
+							<li><a href="page-Copy.html" >Setup</a></li>
+						</ul>
+					</li>
+				<ul>
+			</div>
+		</div>
+		<div class="main_right" >
+			<div class="hdr_top" >				
+				<div class="emp_pho" ><img src="includes/images/me.jpg" /></div>
+				<div class="emp_name" >Hi,<br />Name</div>
+				<div class="act_btn" >
+					<a class="btn btn-danger" id="hdr-menu-btn" href="#" title="Menu" ><i class="fas fa-list"></i></a>
+					<a class="btn btn-danger" id="hdr-logout-btn" href="login.html" title="Logout" ><i class="fas fa-sign-out-alt"></i><span>&nbsp;Logout</span></a>
+				</div>
+				<div class="clearfix" ></div>
+			</div>
+		</div>
+		<!-- END HEADER -->
+		
+		<!-- START CONTENT -->
+		<div class="main_mid" >		
+		
+			<div class="page">
+				<div class="page_top">
+					<h1>Edit Resident</h1>
+					<div class="btns" >
+						<a href="residents list.html" >Back</a>
+					</div>
+					<div class="clearfix" ></div>
+				</div>
+
+				<div class="page_cont">
+					<div class="InputFrm" >
+						<form action="" method="post" >
+							<div class="row">
+								<div class="col-md-3">
+									<div class="frmRow">
+										<div class="title" >Basic Details</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >Name</div>
+										<div class="val" >
+											<input type="text" class="required" id="frm_name" name="frm_name" value="" />
+										</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >Flat no.</div>
+										<div class="val" >
+											<input type="text" class="required" id="frm_gender" name="frm_gender" value=""/>
+										</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >DOB</div>
+										<div class="val" >
+											<input type="text" id="frm_dob" name="frm_dob" value="" />
+										</div>
+									</div>
+									
+								</div>
+								
+								<div class="col-md-3">
+									<div class="frmRow">
+										<div class="title" >Communication Address</div>
+									</div>
+									
+									<div class="frmRow">
+										<div class="lab" >Mob no.</div>
+										<div class="val" >
+											<input type="text" id="frm_com_mo" name="frm_com_po" value="" />
+										</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >Phone No.</div>
+										<div class="val" >
+											<input type="text" id="frm_com_po" name="frm_com_po" value="" />
+										</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >Email</div>
+										<div class="val" >
+											<input type="text" id="frm_email" name="frm_email" value="" />
+										</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >City</div>
+										<div class="val" >
+											<input type="text" id="frm_city" name="frm_city" value="" />
+										</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >State</div>
+										<div class="val" >
+											<input type="text" id="frm_state" name="frm_state" value="" />
+										</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >Country</div>
+										<div class="val" >
+											<input type="text" id="frm_country" name="frm_country" value="" />
+										</div>
+									</div>
+								</div>
+								
+								<div class="col-md-3">
+									<div class="frmRow">
+										<div class="title" >Login Details</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >Username</div>
+										<div class="val" >
+											<input type="text" id="frm_username" name="frm_username" value="" />
+										</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >Password</div>
+										<div class="val" >
+											<input type="text" id="frm_password" name="frm_password" value="" />
+										</div>
+									</div>
+								</div>
+							
+								<div class="col-md-3">
+									<div class="frmRow">
+										<div class="title" >Other Details</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >Active</div>
+										<div class="val" >
+											<input type="radio" id="frm_active_y" name="frm_active" value="" checked />
+											<label for="frm_active_y" >Yes</label>
+											<input type="radio" id="frm_active_n" name="frm_active" value="" />
+											<label for="frm_active_n" >No</label>
+										</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >Owner</div>
+										<div class="val" >
+											<input type="radio" id="frm_active_y" name="frm_active" value="" checked />
+											<label for="frm_active_y" >Yes</label>
+											<input type="radio" id="frm_active_n" name="frm_active" value="" />
+											<label for="frm_active_n" >No</label>
+										</div>
+									</div>
+									<div class="frmRow">
+										<div class="lab" >Role</div>
+										<div class="val" >
+											<input type="radio" id="frm_active_y" name="frm_active" value="" checked />
+											<label for="frm_active_y" >resident</label>
+											<input type="radio" id="frm_active_n" name="frm_active" value="" />
+											<label for="frm_active_n" >cashier</label>
+											<input type="radio" id="frm_active_n" name="frm_active" value="" />
+											<label for="frm_active_n" >admin</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<button type="submit" class="btn btn-save" name="frm_save" >Save</button>
+							<div class="clearfix"></div>
+						</form>
+					</div>
+
+					<script type="text/javascript" >
+						form_validation('frm_add_edit');
+						$(document).ready(function(){
+							$('#frm_dob').datepicker({
+								changeMonth: true,
+								changeYear: true,
+								maxDate: 'today',
+								dateFormat: 'dd/mm/yy'
+							});
+						});
+					</script>
+				</div>
+			</div>
+		</div>
+		<!-- END CONTENT -->
+		
+	<!-- START FOOTER -->
+	<div class="clearfix" ></div>
+</div>
+<div class="clearfix" ></div>
+<div class="main_footer">
+	<div class="copy" >
+		<p>Copyright &copy; 2019 AMCM</p>
+	</div>
+</div>
+</body>
+</html>
+<!-- END FOOTER -->

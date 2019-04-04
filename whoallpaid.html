@@ -1,0 +1,290 @@
+<!-- START HEADER -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>Payment History</title>
+    
+    <!-- Loading Bootstrap -->
+    <link href="includes/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Loading Template CSS -->
+    <link href="includes/css/main.css" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link href="includes/css/fonts.css" rel="stylesheet" />
+    
+    <!-- Font Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+	
+	<link href="includes/css/jquery-ui.css" rel="stylesheet" />
+	<link href="includes/plugins/fontawesome/css/all.css" rel="stylesheet" />
+	<link href="includes/plugins/daterangepicker/style.css" rel="stylesheet" />
+	
+	<script type="text/javascript" src="includes/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="includes/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="includes/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="includes/plugins/daterangepicker/moment.min.js"></script>	
+	<script type="text/javascript" src="includes/plugins/daterangepicker/script.js"></script>	
+	
+	<script type="text/javascript" src="includes/js/common.js"></script>
+</head>
+<body>
+
+	<div class="main_content" >
+		<script src="includes/js/nav.js"></script>
+		<div class="main_right" >
+			<div class="hdr_top" >				
+				<div class="emp_pho" ><img src="includes/images/me.jpg" /></div>
+				<div class="emp_name" >Hi,<br />Name</div>
+				<div class="act_btn" >
+					<a class="btn btn-danger" id="hdr-menu-btn" href="#" title="Menu" ><i class="fas fa-list"></i></a>
+					<a class="btn btn-danger" id="hdr-logout-btn" href="login.html" title="Logout" ><i class="fas fa-sign-out-alt"></i><span>&nbsp;Logout</span></a>
+				</div>
+				<div class="clearfix" ></div>
+			</div>
+		</div>		
+		<!-- END HEADER -->
+		
+		<!-- START CONTENT -->
+		<div class="main_mid" >		
+		
+			<div class="page">
+				<div class="page_top">
+					<h1>Payment History</h1>
+					<div class="btns" >
+						<a href="tickpaid.html" >Back</a>
+					</div>
+					<div class="clearfix" ></div>
+				</div>
+
+				<div class="page_cont">
+				<div class="InputFrm" >
+					<form action="" method="post" >
+						<div class="page_cont_sel">						
+							<div class="page_cont_sel_bx">							
+								<select align="left">
+									<option value="January">Current Month</option>
+									<option value="January">January</option>
+									<option value="February">February</option>
+									<option value="March">March</option>
+									<option value="April">April</option>
+									<option value="May">May</option>
+									<option value="June">June</option>
+									<option value="July">July</option>
+									<option value="August">August</option>
+									<option value="September">September</option>
+									<option value="October">October</option>
+									<option value="November">November</option>
+									<option value="December">December</option>
+								</select>
+							</div>	
+						</div>	
+					<div class="page_cont_fltr">						
+						<div class="page_cont_fltr_bx">						
+							<input type="text" id="fltr_keywords" placeholder="Search" />
+						</div>
+						<div class="clearfix" ></div>
+					</div>
+					<div class="clearfix" ></div>
+					<div class="page_cont_data" >
+						<div class="page_cont_tblsm" >
+							<table>
+								<thead>
+									<tr>
+										<th width="20" >Sl No</th>
+										<th width="150" >Name</th>
+										<th width="50" >Flat No.</th>
+										<th width="100" >Mobile No.</th>
+										<th width="50" >Owner</th>
+										<th width="100" class="text-center" >Role</th>
+										<th width="10" class="text-center" ></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td class="text-center" >1</td>
+										<td>Name 1</td>
+										<td>A1</td>
+										<td>9898989898</td>
+										<td class="text-center" >yes</td>
+										<td class="text-center" >resident</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<a class="del_list_btn fas fa-trash-alt" href="#" title="Delete" ></a>
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center" >2</td>
+										<td>Name 2</td>
+										<td>A2</td>
+										<td>9898989898</td>
+										<td class="text-center" >yes</td>
+									    <td class="text-center" >cashier</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<a class="del_list_btn fas fa-trash-alt" href="#" title="Delete" ></a>
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center" >3</td>
+										<td>Name 3</td>
+										<td>A3</td>
+										<td>9898989898</td>                             
+										<td class="text-center" >yes</td>
+										<td class="text-center" >admin</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<a class="del_list_btn fas fa-trash-alt" href="#" title="Delete" ></a>
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center" >4</td>
+										<td>Name 4</td>
+										<td>B1</td>
+										<td>9898989898</td>
+										<td class="text-center" >no</td>										
+										<td class="text-center" >resident</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<a class="del_list_btn fas fa-trash-alt" href="#" title="Delete" ></a>
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center" >5</td>
+										<td>Name 5</td>
+										<td>B2</td>
+										<td>9898989898</td>									
+										<td class="text-center" >no</td>
+										<td class="text-center" >resident</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<a class="del_list_btn fas fa-trash-alt" href="#" title="Delete" ></a>
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center" >6</td>
+										<td>Name 6</td>
+										<td>B3</td>
+										<td>9898989898</td>
+										<td class="text-center" >yes</td>									
+										<td class="text-center" >resident</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<a class="del_list_btn fas fa-trash-alt" href="#" title="Delete" ></a>
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center" >7</td>
+										<td>Name 7</td>
+										<td>C1</td>
+										<td>9898989898</td>									
+										<td class="text-center" >no</td>
+										<td class="text-center" >resident</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<a class="del_list_btn fas fa-trash-alt" href="#" title="Delete" ></a>
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center" >8</td>
+										<td>Name 8</td>
+										<td>C2</td>
+										<td>9898989898</td>									
+										<td class="text-center" >yes</td>
+										<td class="text-center" >resident</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<a class="del_list_btn fas fa-trash-alt" href="#" title="Delete" ></a>
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center" >9</td>
+										<td>Name 9</td>
+										<td>C3</td>
+										<td>9898989898</td>									
+										<td class="text-center" >yes</td>
+										<td class="text-center" >resident</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<a class="del_list_btn fas fa-trash-alt" href="#" title="Delete" ></a>
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="text-center" >10</td>
+										<td>Name 10</td>
+										<td>D1</td>
+										<td>9898989898</td>									
+										<td class="text-center" >yes</td>
+										<td class="text-center" >resident</td>
+										<td class="text-center" >
+											<div class="actions" >
+												<a class="del_list_btn fas fa-trash-alt" href="#" title="Delete" ></a>
+												<div class="clearfix"></div>
+											</div>
+										</td>
+									</tr>
+									
+								</tbody>
+								
+							</table>
+							<button type="submit" class="btn btn-save" name="frm_save" >Save</button>
+							<div class="clearfix"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<script type="text/javascript" >
+			$(document).ready(function(){
+				
+				// Delete
+				$(document).on('click','.del_list_btn',function(){
+					
+					if(confirm('Are you sure, you want to delete this record?'))
+					{
+						// Delete Function
+					}			
+				});
+			});
+			</script>
+
+		</div>
+		<!-- END CONTENT -->
+		
+	<!-- START FOOTER -->
+	<div class="clearfix" ></div>
+</div>
+<div class="clearfix" ></div>
+<div class="main_footer">
+	<div class="copy" >
+		<p>Copyright &copy; 2019 AMCM</p>
+	</div>
+</div>
+</body>
+</html>
+<!-- END FOOTER -->
