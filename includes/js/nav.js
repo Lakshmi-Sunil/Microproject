@@ -17,5 +17,17 @@ var nav=
 				</li>\
 			<ul>\
 		</div>\
-</div>';
+</div>\
+<div class="main_right" >\
+			<div class="hdr_top" >\
+                                        <div class="emp_pho"><img src="includes/images/me.jpg" /></div>\
+				<div class="emp_name" >Hi,<br />Name</div>\
+				<div class="act_btn" >\
+					<a class="btn btn-danger" id="hdr-menu-btn" href="#" title="Menu" ><i class="fas fa-list"></i></a>\
+					<a class="btn btn-danger" id="hdr-logout-btn" href="login.html" title="Logout" ><i class="fas fa-sign-out-alt"></i><span>&nbsp;Logout</span></a>\
+				</div>\
+				<div class="clearfix" ></div>\
+			</div>\
+</div>'
+;
 document.write(nav);

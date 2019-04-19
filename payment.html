@@ -1,0 +1,108 @@
+<!-- START HEADER -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+
+    <title>Payment</title>
+    
+    <!-- Loading Bootstrap -->
+    <link href="includes/css/bootstrap.css" rel="stylesheet" />
+
+    <!-- Loading Template CSS -->
+    <link href="includes/css/main.css" rel="stylesheet" />
+    
+    <!-- Font Awesome -->
+    <link href="includes/css/fonts.css" rel="stylesheet" />
+    
+    <!-- Font Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+	
+	<link href="includes/css/jquery-ui.css" rel="stylesheet" />
+	<link href="includes/plugins/fontawesome/css/all.css" rel="stylesheet" />
+	<link href="includes/plugins/daterangepicker/style.css" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="includes/css/payment.css" />
+	
+	<script type="text/javascript" src="includes/js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="includes/js/jquery-ui.js"></script>
+    <script type="text/javascript" src="includes/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="includes/plugins/daterangepicker/moment.min.js"></script>	
+	<script type="text/javascript" src="includes/plugins/daterangepicker/script.js"></script>	
+	
+	<script type="text/javascript" src="includes/js/common.js"></script>
+</head>
+<body>
+	
+	<div class="main_content" >
+		<script src="includes/js/nav.js"></script>
+	</div>
+		<div class="main_mid" >		
+		
+			<div class="page">
+				<div class="page_top">
+					<h1>Payment</h1>
+					<div class="btns" >
+						<a href="flat details.html" >Back</a>
+					</div>
+					<div class="clearfix" ></div>
+				</div>
+				<form class="form-inline" action="#">
+				  <label for="usr">Name:</label>
+				  <input type="text" id="usr" placeholder="Enter name" name="name">
+				  <label for="fn">Flat no.:</label>
+				  <input type="text" id="fn" placeholder="Enter flat no." name="fn">
+				  <select>
+				      <option value="Maintenance">Maintenance Charge</option>
+				      <option value="Corpus">Corpus Charge</option>
+				  </select>
+				  <select>
+				      <option value="Current">Current Month</option>
+				      <option value="Multiple">Multiple Months</option>
+				  </select>
+				  <select>
+				      <option value="Cash">Cash</option>
+				      <option value="Debit Card">Debit/Credit</option>
+				      <option value="Net">Net Banking</option>
+				  </select>
+				  <div class="page_cont_data" >
+						<div class="page_cont_tblsm" >
+						  <table align="center">
+						    <caption>Payment Details</caption>
+								<thead>
+									<tr>
+										
+										<th width="50" >Sl no.</th>
+										<th width="50" >Months</th>
+										<th width="150" >Details</th>					
+										<th width="100" >Amount</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										
+										<td>1</td>
+										<td>April</td>
+										<td>Cash</td>
+										<td class="text-center" >2500</td>
+									</tr>
+									<tr>
+					
+										<td>2</td>
+										<td>March</td>
+										<td>Net Banking</td>
+										<td class="text-center">2500</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+				  </div>
+				  
+			       	<br>
+				  <button type="submit">Submit</button>
+				</form>
+				 
+				
