@@ -43,7 +43,7 @@ For user:
 - Button to pay maintenance charge
 - View history
 - Contact info of president, secretary, etc.
-- The 3 lines 
+- The 3 lines(menu) 
   - profile symbol
   - notification bell on off
   - logout
