@@ -2,10 +2,10 @@
 
 We are building an Apartment Maintenance charge Management App that manages maintenance charge collection at any apartment building. This is a progressive web app, ie, a web app made to look like a native application. The primary objectives are:
 
-1. Registration of apartments
-2. Registration of tenants/owners
-3. Payment of maintenance charges via online portal or cash
-4. Automatic bill/receipt generation
+1. Registration of apartments.
+2. Registration of tenants/owners.
+3. Payment of maintenance charges via online portal or cash.
+4. Automatic bill or receipt generation.
 5. Mobile notification when payment made successfully or otherwise.
 
 Functionalities:
@@ -14,7 +14,7 @@ Admin can:
 - Register apartments.
 - Register tenants/owners.
 - Manage user profile.
-- Mail goes to admin when user changes profile data.
+- receive email notification when user changes profile data.
 - Decide if mail should go to a person or not.
 - Add or remove members.
 - Can give admin rights to secretary or anybody else.
